@@ -1,8 +1,7 @@
 require 'spec_helper'
 
-describe Iora::GUID do
+shared_examples Iora::GUID do
   describe Iora::GUID, "before create" do
-    subject { User.new }
     before do
       subject.stubs(generate_unique_id: "xxx-yyy")
       subject.save
