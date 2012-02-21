@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120220232249) do
+ActiveRecord::Schema.define(:version => 20120221010851) do
+
+  create_table "patients", :force => true do |t|
+    t.string   "guid_d"
+    t.string   "guid_e"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "guid_a"
