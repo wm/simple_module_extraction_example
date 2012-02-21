@@ -12,4 +12,3 @@ shared_examples Iora::GUID do
     end
   end
 end
-
